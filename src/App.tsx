@@ -12,11 +12,11 @@ interface ForecastData {
 }
 
 const getClothingRecommendation = (temp: number, description: string) => {
-  if (description.includes('lluvia')) return 'Lleva paraguas y ropa impermeable.';
+  if (description.includes('lluvia')) return 'Lleva paraguas y ropa impermeable. ☂️';
   if (temp < 10) return 'Usa abrigo, bufanda y ropa cálida. 🧣🧤';
   if (temp < 20) return 'Lleva una chaqueta ligera. 🧥';
   if (temp < 28) return 'Ropa cómoda y fresca. 👗👕👖';
-  return 'Usa ropa muy ligera, protector solar y mantente hidratado. 🧢🕶️🧴☂️';
+  return 'Usa ropa muy ligera, protector solar y mantente hidratado. 🧢🕶️🧴';
 };
 
 const dayLabels = ['Hoy', 'Mañana', 'Pasado mañana'];
